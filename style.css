@@ -1,0 +1,138 @@
+@font-face {
+    font-family: onto;
+    src: url(Assets/FontsFree-Net-Ondo-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #2D1E6B;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(Assets/Images/open.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: color-dodge;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    width: 341px;
+height: 341px;
+border-radius: 341px;
+background: #DD00B8;
+  top:150px;
+  left:-50px;
+filter: blur(100px);
+z-index: -1;
+}
+.navigation{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+ul li {
+    display: inline;
+    margin-left:20px ;
+
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-family: 'onto';
+    font-weight: 700;
+    color: white;
+    font-size: 2.6rem;
+}
+
+.content .text h1 {
+    max-width: 578.086px;
+    color: #FFF;
+    font-family: 'onto';
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110.6%; /* 76.245px */
+    letter-spacing: 2.757px;
+    text-transform: uppercase;
+    z-index: 9;
+    margin-top: 150px;
+    margin-bottom: 50px;
+
+}
+
+.content{
+    padding: 0 10%;
+    display: flex;
+   
+    align-items: center;
+}
+
+span{
+    background: url(Assets/Images/style1.png), lightgray 163.807px -78.217px / 71.664% 168.611% no-repeat;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.buy{
+    
+    padding: 10px 20px;
+    background-color: #DD00B8;
+    text-decoration: none;
+    font-family: 'onto';
+    color: #FFF;
+    border-radius: 2px;
+}
+.menubar div {
+    width: 40px;
+    height: 4px;
+    margin: 5px;
+    border-radius: 1px;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.menubar{
+    display: none;
+}
+@media only screen and (max-width:800px){
+    .menubar{
+        display: block;
+    }
+
+    .click{
+        top:12vh;
+    }
+   
+    ul {
+        margin: 0;
+        top:-400px;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 50vh;
+        padding: 30px;
+        
+        position: absolute;
+        background-color: #2D1E6B;
+
+    }
+    ul li {
+        display: block;
+        margin-top: 30px;
+    }
+}
